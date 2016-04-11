@@ -286,9 +286,9 @@ public class Magpie5
 			"Do you really think so?",
 			"You don't say.",
 			"This has been an absolutely riveting conversation.",//#1
-			"Why is that?";//#2
-			"I see.";//#3
-			"Please, do continue.";//#4
+			"Why is that?",//#2
+			"I see.",//#3
+			"Please, do continue."//#4
 	};
 	
 }
