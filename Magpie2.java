@@ -35,6 +35,7 @@ public class Magpie2
 		{
 			response = "Why so negative?";
 		}
+		
 		else if (statement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
@@ -43,20 +44,19 @@ public class Magpie2
 			response = "Tell me more about your family.";
 		}
 		
-			else if (statement.indexOf("dog") >= 0
+		else if (statement.indexOf("dog") >= 0
 				|| statement.indexOf("cat") >= 0
 		)//In case statement concerns pets
 		{
 			response = "Tell me more about your pets.";
 		}
 		
-		else if (statement.indexOf("Mr.Brown") >= 0
-		)//in case statement concerns teacher
+		else if (statement.indexOf("Mr.Brown") >= 0)//in case statement concerns teacher
 		{
 			response = "He sounds like a good teacher.";
 		}
 		
-				else if (statement.trim().length() == 0)//in case there are no characters
+		else if (statement.trim().length() == 0)//in case there are no characters
 		{
 			response = "Say something, please.";
 		}
