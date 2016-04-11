@@ -45,15 +45,34 @@ public class Magpie2
 		
 			else if (statement.indexOf("dog") >= 0
 				|| statement.indexOf("cat") >= 0
-		)
+		)//In case statement concerns pets
 		{
 			response = "Tell me more about your pets.";
 		}
 		
 		else if (statement.indexOf("Mr.Brown") >= 0
-		)
+		)//in case statement concerns teacher
 		{
 			response = "He sounds like a good teacher.";
+		}
+		
+				else if (statement.trim().length() == 0)//in case there are no characters
+		{
+			response = "Say something, please.";
+		}
+		
+		else if (statement.indexOf("Stuyvesant") >= 0)//Keyword #1
+		{
+			response = "Attending that school was the worst decision I've ever made.";
+		}
+		
+		else if (statement.indexOf("college") >= 0) //keyword #2
+		{
+			response = "I was rejected from every college I wanted to attend.\nHow about you?";
+		}
+		
+		else if (statement.indexOf("class") >= 0) {//keyword #3
+			response = "I hope we manage to pass.";
 		}
 		
 		else
